@@ -1,55 +1,174 @@
-.board-list {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.fb-list-con {
+  padding: 80px 0;
 }
 
-.board-list h1 {
+.fb-title h3 {
+  font-size: 28px;
+  color: #333333;
+  font-weight: 400;
   text-align: center;
 }
 
-.board-list table {
+.fb-search-con .fb-search-window {
+  padding: 15px 0;
+}
+.fb-search-con .fb-search-window .fb-search-wrap {
+  position: relative;
+/*   padding-right: 124px; */
+  margin: 0 auto;
+  width: 80%;
+  max-width: 564px;
+}
+.fb-search-con .fb-search-window .fb-search-wrap input {
+  height: 40px;
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+  font-size: 14px;
+  padding: 7px 14px;
+  border: 1px solid #ccc;
+}
+.fb-search-con .fb-search-window .fb-search-wrap input:focus {
+  border-color: #333;
+  outline: 0;
+  border-width: 1px;
+}
+.fb-search-con .fb-search-window .fb-search-wrap .search-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 108px;
+  padding: 0;
+  font-size: 16px;
 }
 
-.board-list th, .board-list td {
-  border: 1px solid #ccc;
-  padding: 10px;
+.fb-table {
+  font-size: 13px;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.fb-table a {
+  text-decoration: none;
+  color: #333;
+  display: inline-block;
+  line-height: 1.4;
+  word-break: break-all;
+  vertical-align: middle;
+}
+.fb-table a:hover {
+  text-decoration: underline;
+}
+.fb-table th {
+  text-align: center;
+}
+
+.fb-table .th-num {
+  width: 100px;
+  text-align: center;
+}
+
+.fb-table .th-date {
+  width: 200px;
+}
+
+.fb-table th, .fb-table td {
+  padding: 14px 0;
+}
+
+.fb-table tbody td {
+  border-top: 1px solid #e7e7e7;
+  text-align: center;
+}
+
+.fb-table tbody th {
+  padding-left: 28px;
+  padding-right: 14px;
+  border-top: 1px solid #e7e7e7;
   text-align: left;
 }
 
-.board-list th {
-  background-color: #eee;
+.fb-table tbody th p{
+  display: none;
 }
 
-.board-list tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-.board-list a {
-  text-decoration: none;
-  color: #0078d4;
-}
-
-.board-list a:hover {
-  text-decoration: underline;
-}
-
-.board-list .btn {
+.write-btn, .search-btn {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #0078d4;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
+  padding: 0 30px;
+  font-size: 15px;
+  font-weight: 400;
+  background: transparent;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-.board-list .btn:hover {
-  background-color: #0056b3;
+.btn-dark {
+  background: #555;
+  color: #fff;
+}
+
+.btn-dark:hover, .btn-dark:focus {
+  background: #373737;
+  border-color: #373737;
+  color: #fff;
+}
+
+.btn-dark {
+  background: #555;
+  color: #fff;
+}
+
+.btn-dark:hover, .btn-dark:focus {
+  background: #373737;
+  border-color: #373737;
+  color: #fff;
+}
+
+.button-box {
+  display:flex;
+  max-width:1100px;
+  margin: 0 auto;
+  justify-content:flex-end;
+  margin: 20px auto;
+}
+
+/* reset */
+
+* {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.fb-con {
+  width: 1100px;
+  margin: 0 auto;
 }
